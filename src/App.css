@@ -229,3 +229,27 @@
 .report-card li:last-child {
   border-bottom: none;
 }
+
+.App-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.App-content {
+  flex: 1; /* Allows this area to grow and push the footer */
+  padding: 20px;
+}
+
+/* Footer styles */
+.app-footer {
+  padding: 20px;
+  background-color: #282c34; /* Same as the header */
+  color: white;
+  text-align: center;
+  flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+.app-footer p {
+  margin: 5px 0;
+}
